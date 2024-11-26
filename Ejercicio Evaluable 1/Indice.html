@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloBlackJack.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <title>BlackJack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 align="center">BlackJack</h1>
+            <button type="button" value="pedir carta" class="btn btn-primary" id="btn-pedirCarta" onclick="pedirCarta()">Pedir carta</button>
+            <button type="button" value="plantarme" class="btn btn-secondary" id="btn-plantarme" onclick="plantarse()">Plantarme</button>
+            <button type="button" value="resetear" class="btn btn-dark" id="btn-restart" onclick="resetear()">Resetear juego</button><br><br>
+
+            <div id="info"></div><br><br>
+            <div class="tapete">
+                <h3>Cartas del Jugador:</h3>
+                <div id="cartas-jugador" class="mt-4"></div>
+            </div>
+            <div class="tapete">
+                <h3>Cartas de la Banca:</h3>
+                <div id="cartas-banca" class="mt-4"></div>
+            </div>
+        </div>
+    </main>
+        
+    <script src="./objetos.js"></script>
+    <script src="./juego.js"></script>
+    
+</body>
+</html>
